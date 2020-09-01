@@ -2,11 +2,12 @@
 
 GAME RULES:
 
-- The game has 2 players, playing in rounds.
-- In each turn, a player rolls a dice as many times as he/she wishes. Each result gets added to his/her ROUND score.
-- If the player rolls a 1, all of his/her ROUND score is lost. After that, it is the next player's turn.
-
-The first player to reach 100 points wins the game!
+- The game has two players playing in rounds.
+- In each round, a player rolls two dice as often as they want. The result is added to their ROUND score.
+- At any time in their turn, the player can HOLD and roll their ROUND score into their GLOBAL score.
+- If the player rolls a 1 on either dice, their round ends, they lose their ROUND score, and the turn is passed to the next player.
+- If the player rolls a 6 on both dice, their round ends, they lose their GLOBAL score, and the turn is passed to the next player.
+- First to reach the target amount wins!
 
 */
 
@@ -118,13 +119,3 @@ function init() {
     document.querySelector('.player-1-panel').classList.remove('active');
     document.querySelector('.player-0-panel').classList.add('active');
 }
-
-/* Coding Challenge #6 */
-
-/*
-
-1. Make it so that a player loses his global score if they roll two sixes in a row. Also switch to next player's turn. (Hint: Always save the previous dice roll in a seperate variable.)
-2. Add an input field ot the HTML where players can set the winning score, so that they can change the predefined score of 100. (Hint: you can read that value with the .value property in JavaScript. This is a good opportunity to use Google or StackOverflow to figure this out.)
-3. Add another dice to the game, so that there are two dices now. The player loses his current score when one of them is a 1. (Hint: you will need CSS to position the second dice, so take a look at the CSS code for the first one.)
-
-*/
