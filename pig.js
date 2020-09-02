@@ -15,7 +15,7 @@ var scores, roundScore, prevRoll, activePlayer, gamePlaying;
 
 init();
 
-document.querySelector('.btn-roll').addEventListener('click', function() {
+document.querySelector('.btn-roll').addEventListener('click', function () {
     if (gamePlaying) {
         // Make dice roll random number between 1 and 6
 
@@ -26,8 +26,8 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
 
         document.getElementById('dice-1').style.display = 'block';
         document.getElementById('dice-2').style.display = 'block';
-        document.getElementById('dice-1').src = 'img/dice-' + dice1 + '.png';
-        document.getElementById('dice-2').src = 'img/dice-' + dice2 + '.png';
+        document.getElementById('dice-1').src = 'pig_img/dice-' + dice1 + '.png';
+        document.getElementById('dice-2').src = 'pig_img/dice-' + dice2 + '.png';
 
         // Update round score if the rolled number was not a 1, remove global score if 2 sixes are rolled in a row
 
@@ -39,14 +39,14 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
             roundScore += dice1 + dice2;
             document.querySelector('#current-' + activePlayer).textContent = roundScore;
         } else {
-        // Changing player and removing dice image for next player
+            // Changing player and removing dice image for next player
             nextPlayer();
         }
         // prevRoll = dice;
-    } 
+    }
 });
 
-document.querySelector('.btn-hold').addEventListener('click', function() {
+document.querySelector('.btn-hold').addEventListener('click', function () {
     if (gamePlaying) {
         // Add round score to global score on hold
 
@@ -59,7 +59,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         var input = document.querySelector('.final-score').value;
         var winningScore;
 
-        if(input) {
+        if (input) {
             winningScore = input;
         } else {
             winningScore = 100;
@@ -77,7 +77,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         } else {
             nextPlayer();
         }
-    }    
+    }
 });
 
 // function to switch to the next player
@@ -87,7 +87,7 @@ function nextPlayer() {
 
     document.getElementById('current-0').textContent = '0';
     document.getElementById('current-1').textContent = '0';
-     
+
     document.querySelector('.player-0-panel').classList.toggle('active');
     document.querySelector('.player-1-panel').classList.toggle('active');
 
