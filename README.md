@@ -18,3 +18,6 @@ This game was created during the Complete JavaScript Course on Udemy, taught by 
 - **index.html**: HTML elements for structuring the web page
 
 ## Have fun! 
+
+## To-do:
+- **Scoreboard**: In the future, I would like to add authentication that tracks wins and updates a scoreboard.
