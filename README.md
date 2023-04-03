@@ -1,4 +1,5 @@
-![pig game screenshot](https://raw.githubusercontent.com/akashdikkaram/Pig-Dice-Game/master/screenshot.png)
+![image](https://user-images.githubusercontent.com/59927398/229568973-346c241b-41a0-4df1-9702-ad8c1fde9056.png)
+
 # PIG! A Simple Dice Game
 
 This game was created during the Complete JavaScript Course on Udemy, taught by Jonas Schedtmann.
